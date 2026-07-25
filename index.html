@@ -1,0 +1,1318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1E1A38">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Wyrm — a calorie log that feels like a game. Feed your dragon, keep your streak alive.">
+<title>Wyrm · feed your dragon</title>
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMjAgMjIwIj48cmVjdCB3aWR0aD0iMjIwIiBoZWlnaHQ9IjIyMCIgcng9IjQ0IiBmaWxsPSIjMUUxQTM4Ii8+PGNpcmNsZSBjeD0iMTEwIiBjeT0iMTIwIiByPSI3MiIgZmlsbD0iIzNFQzlCMCIvPjxwYXRoIGQ9Ik03OCw2OCBRNzIsNDIgOTAsNTAgUTg3LDY4IDgzLDc3IFoiIGZpbGw9IiMyNzk0ODgiLz48cGF0aCBkPSJNMTQyLDY4IFExNDgsNDIgMTMwLDUwIFExMzMsNjggMTM3LDc3IFoiIGZpbGw9IiMyNzk0ODgiLz48ZWxsaXBzZSBjeD0iMTEwIiBjeT0iMTM2IiByeD0iMzIiIHJ5PSIyNCIgZmlsbD0iI0ZGQzE1RSIvPjxjaXJjbGUgY3g9Ijg5IiBjeT0iMTEyIiByPSIxNCIgZmlsbD0iIzJBMjE0MCIvPjxjaXJjbGUgY3g9IjEzMSIgY3k9IjExMiIgcj0iMTQiIGZpbGw9IiMyQTIxNDAiLz48Y2lyY2xlIGN4PSI5MyIgY3k9IjEwNyIgcj0iNC41IiBmaWxsPSIjRkZGRkZGIi8+PGNpcmNsZSBjeD0iMTM1IiBjeT0iMTA3IiByPSI0LjUiIGZpbGw9IiNGRkZGRkYiLz48L3N2Zz4K">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   WYRM — a game-first calorie log
+   ------------------------------------------------------------
+   This file is one self-contained page: HTML + CSS + JS.
+   Sections below are ordered to match the reading order of the
+   page. Search for "EXTENSION POINT" comments in the <script>
+   for places future features (targets, food DB, cosmetics, etc.)
+   are expected to plug in later.
+   ============================================================ */
+
+:root{
+  --bg-1:#1E1A38;
+  --bg-2:#322659;
+  --card:#FFF6E8;
+  --card-edge:#F0DEB8;
+  --card-inset:#FBEBCB;
+  --ink:#2A2140;
+  --ink-soft:#7A6B96;
+  --ink-faint:#A99BC4;
+  --flame-1:#FF7A45;
+  --flame-2:#FFB23F;
+  --flame-3:#FF4D6D;
+  --teal:#2FBEA6;
+  --teal-deep:#1F9986;
+  --teal-soft:rgba(47,190,166,.18);
+  --lilac:#8B7CD8;
+  --white:#FFFFFF;
+  --shadow-card: 0 16px 34px rgba(20,14,46,.38);
+  --shadow-soft: 0 6px 16px rgba(20,14,46,.22);
+  --radius-lg:28px;
+  --radius-md:18px;
+  --radius-sm:12px;
+  --font-display:'Fredoka','Segoe UI Rounded',system-ui,sans-serif;
+  --font-body:'Nunito',system-ui,-apple-system,sans-serif;
+}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html,body{height:100%;}
+html{ background:var(--bg-1); }
+body{
+  margin:0;
+  min-height:100%;
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 50% -10%, var(--bg-2), var(--bg-1) 60%);
+  position:relative;
+  padding: calc(env(safe-area-inset-top) + 14px) 14px calc(env(safe-area-inset-bottom) + 28px);
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.55) 1px, transparent 1.5px);
+  background-size:46px 46px;
+  opacity:.18;
+  pointer-events:none;
+  z-index:0;
+}
+button, input, select{ font-family:inherit; }
+button{ cursor:pointer; }
+input:focus-visible, select:focus-visible, button:focus-visible{
+  outline: 3px solid var(--lilac);
+  outline-offset: 2px;
+}
+
+.app{
+  position:relative;
+  z-index:1;
+  max-width:480px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2px 0 4px;
+}
+.brand{
+  font-family:var(--font-display);
+  font-weight:700;
+  letter-spacing:.06em;
+  color:var(--white);
+  font-size:15px;
+  opacity:.85;
+}
+
+/* ---------- Nest card (dragon + xp + streak) ---------- */
+.nest-card{
+  position:relative;
+  background:var(--card);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-card);
+  padding:18px 20px 20px;
+  overflow:hidden;
+}
+.nest-glow{
+  position:absolute;
+  inset:-20% -20% auto -20%;
+  height:220px;
+  background:radial-gradient(circle, rgba(255,178,63,.35), transparent 65%);
+  pointer-events:none;
+}
+.dragon-stage-wrap{
+  position:relative;
+  height:172px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+.dragon-stage-wrap svg{ display:none; }
+.dragon-stage-wrap.stage-egg .egg-svg{ display:block; }
+.dragon-stage-wrap.stage-baby .baby-svg{ display:block; }
+.dragon-stage-wrap.stage-adult .adult-svg{ display:block; }
+
+.egg-svg, .baby-svg, .adult-svg{
+  width:150px; height:150px;
+  transform-origin:50% 90%;
+}
+.egg-svg{ animation:wobble 4s ease-in-out infinite; }
+.baby-svg, .adult-svg{ animation:bob 3s ease-in-out infinite; }
+@keyframes wobble{ 0%,100%{transform:rotate(-3deg);} 50%{transform:rotate(3deg);} }
+@keyframes bob{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(-6px);} }
+
+.nest-svg{
+  position:absolute;
+  bottom:-6px; left:50%;
+  transform:translateX(-50%);
+  width:190px; height:auto;
+  z-index:-1;
+}
+
+.xp-pop-wrap{
+  position:absolute;
+  left:0; right:0; top:8px;
+  display:flex; justify-content:center;
+  pointer-events:none;
+  z-index:5;
+}
+.xp-pop-item{
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:18px;
+  color:var(--teal-deep);
+  animation:floatFade 1.5s ease forwards;
+}
+@keyframes floatFade{
+  0%{ opacity:0; transform:translateY(8px) scale(.9); }
+  18%{ opacity:1; transform:translateY(0) scale(1); }
+  75%{ opacity:1; }
+  100%{ opacity:0; transform:translateY(-38px) scale(1); }
+}
+
+.dragon-name{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:20px;
+  text-align:center;
+  margin-top:2px;
+}
+
+.xp-bar-track{
+  margin-top:12px;
+  height:14px;
+  border-radius:999px;
+  background:var(--teal-soft);
+  overflow:hidden;
+}
+.xp-bar-fill{
+  height:100%;
+  width:0%;
+  border-radius:999px;
+  background:linear-gradient(90deg, var(--teal-deep), var(--teal));
+  transition:width .7s cubic-bezier(.2,.9,.3,1);
+}
+.xp-label{
+  margin-top:6px;
+  font-size:12.5px;
+  color:var(--ink-soft);
+  text-align:center;
+  font-variant-numeric:tabular-nums;
+}
+
+.streak-row{
+  margin-top:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
+.flame{
+  font-size:22px;
+  line-height:1;
+  filter:drop-shadow(0 0 0 transparent);
+  animation:flicker 2.2s ease-in-out infinite;
+}
+.flame::before{ content:"🔥"; }
+.flame-1{ font-size:20px; }
+.flame-2{ font-size:24px; filter:drop-shadow(0 0 6px rgba(255,178,63,.6)); }
+.flame-3{ font-size:28px; filter:drop-shadow(0 0 10px rgba(255,122,69,.7)); }
+.flame-4{ font-size:32px; filter:drop-shadow(0 0 14px rgba(255,77,109,.75)); }
+@keyframes flicker{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.08); } }
+.streak-text{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:15px;
+}
+.freeze-status{
+  text-align:center;
+  font-size:11.5px;
+  margin-top:4px;
+  color:var(--ink-faint);
+}
+.freeze-status.ready{ color:var(--teal-deep); }
+
+/* ---------- Section shells ---------- */
+.section-label{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:13px;
+  letter-spacing:.03em;
+  color:var(--white);
+  opacity:.8;
+  margin:0 2px 8px;
+}
+.card{
+  background:var(--card);
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow-soft);
+  padding:14px 16px;
+}
+
+/* ---------- Date pills ---------- */
+.date-pills{
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  scrollbar-width:none;
+  padding-bottom:2px;
+}
+.date-pills::-webkit-scrollbar{ display:none; }
+.date-pill{
+  flex:0 0 auto;
+  border:none;
+  border-radius:999px;
+  padding:8px 14px;
+  font-weight:700;
+  font-size:13px;
+  background:var(--card-inset);
+  color:var(--ink-soft);
+  min-height:38px;
+}
+.date-pill.past{ background:transparent; border:1.5px dashed var(--card-edge); color:var(--ink-faint); }
+.date-pill.selected{
+  background:linear-gradient(90deg, var(--flame-1), var(--flame-2));
+  color:var(--white);
+  border:none;
+}
+
+/* ---------- Quick add chips ---------- */
+.chip-row{
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  scrollbar-width:none;
+  padding-bottom:2px;
+}
+.chip-row::-webkit-scrollbar{ display:none; }
+.chip{
+  flex:0 0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:2px;
+  border:none;
+  border-radius:var(--radius-sm);
+  background:var(--card-inset);
+  padding:8px 14px;
+  min-height:48px;
+  min-width:84px;
+}
+.chip-name{ font-weight:800; font-size:13px; }
+.chip-cal{ font-size:11.5px; color:var(--ink-soft); }
+.chip-empty{
+  font-size:13px;
+  color:rgba(255,255,255,.65);
+  padding:8px 2px;
+}
+
+/* ---------- Log form ---------- */
+.log-form{ display:flex; flex-direction:column; gap:10px; }
+.form-row{ display:flex; gap:8px; }
+input[type="text"], input[type="number"]{
+  width:100%;
+  border:1.5px solid var(--card-edge);
+  background:var(--white);
+  border-radius:var(--radius-sm);
+  padding:12px 12px;
+  font-size:16px;
+  color:var(--ink);
+  min-height:46px;
+}
+.form-row-cals{ align-items:center; }
+.form-row-cals input{ flex:1; }
+.link-btn{
+  border:none; background:none;
+  color:var(--teal-deep);
+  font-weight:700;
+  font-size:12.5px;
+  white-space:nowrap;
+  padding:6px 4px;
+}
+.primary-btn{
+  border:none;
+  border-radius:var(--radius-sm);
+  background:linear-gradient(90deg, var(--teal-deep), var(--teal));
+  color:var(--white);
+  font-weight:800;
+  font-size:15px;
+  padding:0 20px;
+  min-height:46px;
+  white-space:nowrap;
+}
+.macros-row{ display:flex; gap:8px; }
+.macros-row[hidden]{ display:none; }
+.macros-row input{ text-align:center; }
+.add-feedback{
+  display:block;
+  width:100%;
+  min-height:18px;
+  margin-top:8px;
+  background:none;
+  border:none;
+  text-align:center;
+  font-weight:800;
+  font-size:13px;
+  color:var(--teal-deep);
+  opacity:0;
+  transform:translateY(-4px);
+  transition:opacity .2s ease, transform .2s ease;
+}
+.add-feedback.show{ opacity:1; transform:translateY(0); }
+
+/* ---------- Today log ---------- */
+.today-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:16px;
+  margin-bottom:8px;
+}
+#todayTotal{ font-variant-numeric:tabular-nums; color:var(--ink-soft); font-size:14px; }
+#entryList{ display:flex; flex-direction:column; gap:4px; }
+.moment-group{ padding:6px 0; border-bottom:1px solid var(--card-inset); }
+.moment-group:last-child{ border-bottom:none; }
+.moment-header{
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-family:var(--font-display);
+  font-weight:600; font-size:13.5px;
+  padding:2px 2px 4px;
+}
+.moment-sub{ font-size:12px; color:var(--ink-soft); font-variant-numeric:tabular-nums; }
+.moment-empty{ font-size:12.5px; color:var(--ink-faint); padding:0 2px 6px; }
+.entry-row{ padding:2px 0; }
+.entry-line{ display:flex; align-items:center; gap:2px; }
+.entry-line .entry-main{ flex:1; min-width:0; }
+.entry-delete{
+  flex:0 0 auto;
+  background:none; border:none;
+  color:var(--ink-faint);
+  font-size:15px;
+  padding:6px 8px;
+  min-width:34px; min-height:34px;
+}
+.entry-main{
+  width:100%;
+  background:none; border:none;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:6px 2px;
+  text-align:left;
+}
+.entry-name{ font-weight:700; font-size:14.5px; display:flex; align-items:center; gap:6px; }
+.backdated-tag{ font-size:12px; opacity:.7; }
+.entry-cal{ font-weight:700; font-size:14px; color:var(--ink-soft); font-variant-numeric:tabular-nums; }
+.entry-macros{ font-size:11.5px; color:var(--ink-faint); padding:0 2px; }
+.empty-state{ font-size:13.5px; color:var(--ink-soft); padding:10px 2px; }
+
+/* ---------- Inline edit row ---------- */
+.edit-row{ display:flex; flex-direction:column; gap:8px; padding:8px 2px; }
+.edit-grid{ display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:6px; }
+.edit-grid input{ padding:8px; font-size:14px; min-height:38px; }
+.edit-selects{ display:flex; gap:8px; }
+.edit-selects select{
+  flex:1;
+  border:1.5px solid var(--card-edge);
+  border-radius:var(--radius-sm);
+  padding:8px;
+  font-size:13.5px;
+  background:var(--white);
+}
+.edit-actions{ display:flex; gap:8px; }
+.edit-actions button{
+  flex:1;
+  border:none;
+  border-radius:var(--radius-sm);
+  padding:9px 0;
+  font-weight:700;
+  font-size:13px;
+}
+.save-btn{ background:var(--teal-deep); color:var(--white); }
+.delete-btn{ background:#FDEAEA; color:#C0435A; }
+.cancel-btn{ background:var(--card-inset); color:var(--ink-soft); }
+
+/* ---------- Banners ---------- */
+.banner-wrap{
+  position:fixed;
+  top:calc(env(safe-area-inset-top) + 10px);
+  left:0; right:0;
+  display:flex; justify-content:center;
+  z-index:20;
+  pointer-events:none;
+}
+.banner{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:14px;
+  background:var(--ink);
+  color:var(--white);
+  padding:10px 18px;
+  border-radius:999px;
+  box-shadow:var(--shadow-soft);
+  opacity:0;
+  transform:translateY(-14px);
+  transition:opacity .35s ease, transform .35s ease;
+  max-width:90vw;
+  text-align:center;
+}
+.banner.show{ opacity:1; transform:translateY(0); }
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; transition:none !important; }
+}
+</style>
+</head>
+<body>
+
+<div class="banner-wrap" id="bannerWrap"></div>
+
+<div class="app">
+
+  <div class="topbar"><span class="brand">WYRM</span></div>
+
+  <header class="nest-card">
+    <div class="nest-glow"></div>
+    <div class="xp-pop-wrap" id="xpPopWrap"></div>
+
+    <div class="dragon-stage-wrap" id="dragonStageWrap">
+      <svg class="egg-svg" viewBox="0 0 220 220" aria-hidden="true">
+        <ellipse cx="110" cy="132" rx="70" ry="78" fill="#F3E6C8" stroke="#C79A55" stroke-width="4"/>
+        <circle cx="83" cy="98" r="7" fill="#E3C48C"/>
+        <circle cx="131" cy="141" r="6" fill="#E3C48C"/>
+        <circle cx="100" cy="172" r="5" fill="#E3C48C"/>
+        <circle cx="144" cy="110" r="4" fill="#E3C48C"/>
+        <ellipse cx="81" cy="86" rx="19" ry="10" fill="#FFFFFF" opacity="0.55"/>
+      </svg>
+
+      <svg class="baby-svg" viewBox="0 0 220 220" aria-hidden="true">
+        <path d="M155,175 Q185,165 180,140 Q178,155 160,160 Z" fill="#279488"/>
+        <ellipse cx="110" cy="155" rx="52" ry="42" fill="#3EC9B0"/>
+        <ellipse cx="110" cy="163" rx="30" ry="26" fill="#FFC15E"/>
+        <ellipse cx="85" cy="196" rx="14" ry="9" fill="#279488"/>
+        <ellipse cx="135" cy="196" rx="14" ry="9" fill="#279488"/>
+        <path d="M65,140 Q35,120 45,95 Q65,110 72,138 Z" fill="#279488"/>
+        <path d="M155,140 Q185,120 175,95 Q155,110 148,138 Z" fill="#279488"/>
+        <circle cx="110" cy="92" r="46" fill="#3EC9B0"/>
+        <path d="M88,52 Q84,35 94,40 Q92,52 90,58 Z" fill="#279488"/>
+        <path d="M132,52 Q136,35 126,40 Q128,52 130,58 Z" fill="#279488"/>
+        <ellipse cx="110" cy="102" rx="20" ry="14" fill="#FFC15E"/>
+        <circle cx="94" cy="86" r="9" fill="#2A2140"/>
+        <circle cx="126" cy="86" r="9" fill="#2A2140"/>
+        <circle cx="97" cy="83" r="3" fill="#FFFFFF"/>
+        <circle cx="129" cy="83" r="3" fill="#FFFFFF"/>
+        <circle cx="80" cy="98" r="7" fill="#FF9E80" opacity="0.5"/>
+        <circle cx="140" cy="98" r="7" fill="#FF9E80" opacity="0.5"/>
+        <circle cx="104" cy="106" r="2" fill="#B8860B" opacity="0.6"/>
+        <circle cx="116" cy="106" r="2" fill="#B8860B" opacity="0.6"/>
+      </svg>
+
+      <svg class="adult-svg" viewBox="0 0 220 220" aria-hidden="true">
+        <path d="M165,190 Q205,175 205,140 Q200,165 175,172 Q195,150 190,130 Z" fill="#279488"/>
+        <path d="M188,128 L200,120 L196,134 Z" fill="#279488"/>
+        <ellipse cx="140" cy="200" rx="16" ry="10" fill="#279488"/>
+        <ellipse cx="90" cy="200" rx="16" ry="10" fill="#279488"/>
+        <path d="M75,130 Q20,100 15,50 Q55,70 75,110 Q60,90 70,60 Q85,90 85,125 Z" fill="#279488"/>
+        <path d="M145,130 Q200,100 205,50 Q165,70 145,110 Q160,90 150,60 Q135,90 135,125 Z" fill="#279488"/>
+        <ellipse cx="112" cy="150" rx="48" ry="50" fill="#3EC9B0"/>
+        <ellipse cx="112" cy="160" rx="28" ry="32" fill="#FFC15E"/>
+        <circle cx="112" cy="85" r="42" fill="#3EC9B0"/>
+        <path d="M85,48 Q76,20 92,32 Q90,50 88,58 Z" fill="#279488"/>
+        <path d="M139,48 Q148,20 132,32 Q134,50 136,58 Z" fill="#279488"/>
+        <ellipse cx="112" cy="98" rx="18" ry="13" fill="#FFC15E"/>
+        <circle cx="97" cy="80" r="8" fill="#2A2140"/>
+        <circle cx="127" cy="80" r="8" fill="#2A2140"/>
+        <circle cx="99" cy="77" r="2.5" fill="#FFFFFF"/>
+        <circle cx="129" cy="77" r="2.5" fill="#FFFFFF"/>
+        <path d="M112,108 Q118,118 112,126 Q106,118 112,108 Z" fill="#FF7A45"/>
+        <path d="M112,112 Q116,119 112,124 Q108,119 112,112 Z" fill="#FFB23F"/>
+      </svg>
+
+      <svg class="nest-svg" viewBox="0 0 220 60" aria-hidden="true">
+        <path d="M10,50 Q40,10 70,45 Q100,5 130,45 Q160,10 190,50" stroke="#8B5E3C" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M20,55 Q60,25 110,50 Q160,20 205,55" stroke="#6E4A2E" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <ellipse cx="110" cy="52" rx="95" ry="10" fill="#6E4A2E" opacity="0.35"/>
+      </svg>
+    </div>
+
+    <div class="dragon-name" id="dragonName">Ember · Egg</div>
+    <div class="xp-bar-track"><div class="xp-bar-fill" id="xpFill"></div></div>
+    <div class="xp-label" id="xpLabel">0 / 150 XP to hatch</div>
+
+    <div class="streak-row">
+      <span class="flame flame-1" id="flameIcon"></span>
+      <span class="streak-text" id="streakText">Log a meal to start your streak</span>
+    </div>
+    <div class="freeze-status" id="freezeStatus">❄️ Freeze ready</div>
+  </header>
+
+  <section>
+    <div class="section-label">Log for</div>
+    <div class="date-pills" id="datePills"></div>
+  </section>
+
+  <section>
+    <div class="section-label">Moment</div>
+    <div class="date-pills" id="momentPills"></div>
+  </section>
+
+  <section>
+    <div class="section-label">Quick add</div>
+    <div class="chip-row" id="chipRow"></div>
+  </section>
+
+  <section class="card">
+    <form class="log-form" id="logForm">
+      <div class="form-row">
+        <input type="text" id="foodName" placeholder="What did you eat?" autocomplete="off" aria-label="Food name">
+      </div>
+      <div class="form-row form-row-cals">
+        <input type="number" id="foodCals" inputmode="numeric" placeholder="Calories" aria-label="Calories">
+        <button type="button" class="link-btn" id="toggleMacros">+ macros</button>
+        <button type="submit" class="primary-btn">Add</button>
+      </div>
+      <div class="macros-row" id="macrosRow" hidden>
+        <input type="number" id="foodProtein" inputmode="numeric" placeholder="Protein g" aria-label="Protein grams">
+        <input type="number" id="foodCarbs" inputmode="numeric" placeholder="Carbs g" aria-label="Carb grams">
+        <input type="number" id="foodFat" inputmode="numeric" placeholder="Fat g" aria-label="Fat grams">
+      </div>
+    </form>
+    <button type="button" class="add-feedback" id="addFeedback" aria-live="polite"></button>
+  </section>
+
+  <section class="card">
+    <div class="today-header">
+      <span id="logDateLabel">Today</span>
+      <span id="todayTotal">0 cal</span>
+    </div>
+    <div id="entryList"></div>
+    <div class="empty-state" id="emptyState">No food logged yet today — add your first meal above.</div>
+  </section>
+
+</div>
+
+<script>
+/* ============================================================
+   STATE + STORAGE
+   ============================================================ */
+const STORAGE_KEY = 'wyrmState_v1';
+
+function defaultState(){
+  return {
+    version: 1,
+    entries: [],            // {id,name,calories,protein,carbs,fat,date,backdated,loggedAt}
+    totalXP: 0,
+    xpFloor: 0,              // highest stage-minimum ever reached — only ratchets up, so the dragon never visually de-evolves
+    momentAwards: {},        // { "date|moment": xpAmount } — exactly what each moment has been granted, so deletes can claw back precisely
+    allFoodNames: [],        // every food name ever logged (normalized), for the variety bonus
+    streakMeta: { currentLength: 0, milestonesAwarded: [] },
+    freezeLog: {}            // { [mondayDateStr]: true } — one freeze available per week
+  };
+}
+function loadState(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(!raw) return defaultState();
+    return Object.assign(defaultState(), JSON.parse(raw));
+  }catch(e){
+    console.warn('Wyrm: could not read saved data, starting fresh.', e);
+    return defaultState();
+  }
+}
+function saveState(){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+  catch(e){ console.warn('Wyrm: could not save data.', e); }
+}
+
+let state = loadState();
+let ui = { selectedDate: null, selectedMoment: null, macrosOpen: false, editingId: null };
+
+/* ============================================================
+   DATE HELPERS (all dates are local 'YYYY-MM-DD' strings)
+   ============================================================ */
+function todayStr(d = new Date()){
+  const y = d.getFullYear(), m = String(d.getMonth()+1).padStart(2,'0'), day = String(d.getDate()).padStart(2,'0');
+  return `${y}-${m}-${day}`;
+}
+function addDaysStr(dateStr, delta){
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const dt = new Date(y, m-1, d);
+  dt.setDate(dt.getDate()+delta);
+  return todayStr(dt);
+}
+function isoMondayOf(dateStr){
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const dt = new Date(y, m-1, d);
+  const day = dt.getDay(); // 0=Sun..6=Sat
+  const diff = (day === 0 ? -6 : 1 - day);
+  dt.setDate(dt.getDate()+diff);
+  return todayStr(dt);
+}
+function pillLabel(dateStr, delta){
+  if(delta === 0) return 'Today';
+  if(delta === -1) return 'Yesterday';
+  const [y,m,d] = dateStr.split('-').map(Number);
+  return new Date(y,m-1,d).toLocaleDateString(undefined,{ weekday:'short', day:'numeric' });
+}
+function headerLabel(dateStr){
+  const t = todayStr();
+  if(dateStr === t) return 'Today';
+  if(dateStr === addDaysStr(t,-1)) return 'Yesterday';
+  const [y,m,d] = dateStr.split('-').map(Number);
+  return new Date(y,m-1,d).toLocaleDateString(undefined,{ weekday:'short', month:'short', day:'numeric' });
+}
+
+/* ============================================================
+   GAME RULES — dragon stages, XP, streaks
+   (Tune these numbers freely; nothing else depends on the exact values.)
+   ============================================================ */
+const STAGES = [
+  { key:'egg',   min:0,   max:149,      label:'Egg',          nextLabel:'XP to hatch' },
+  { key:'baby',  min:150, max:499,      label:'Baby Dragon',  nextLabel:'XP to grow up' },
+  { key:'adult', min:500, max:Infinity, label:'Adult Dragon', nextLabel:null }
+  // EXTENSION POINT: additional stages/cosmetic unlocks could be appended here later.
+];
+function getStage(xp){ return STAGES.find(s => xp >= s.min && xp <= s.max) || STAGES[STAGES.length-1]; }
+
+const MILESTONES = [ {days:3, xp:50}, {days:7, xp:100}, {days:30, xp:300} ];
+const BACKDATE_DAYS = 7;     // how many days into the past you can log/edit (plus today)
+const MOMENT_XP = 20;        // awarded once per moment per day — the first thing you log into it
+const NEW_FOOD_BONUS = 15;   // trying a food you've never logged before
+
+/* The day is split into 6 logging moments. XP is tied to *starting* a moment,
+   not to how many items go into it — logging 5 things at lunch earns the same
+   base XP as logging 1, so there's no incentive to split food into extra entries.
+   EXTENSION POINT: a `calorieLimit` field could be added per moment here later,
+   compared against each moment's subtotal in renderEntryList. */
+const MOMENTS = [
+  { key:'breakfast',       label:'Breakfast',       hourStart:5,    hourEnd:10   },
+  { key:'morning_snack',   label:'Morning Snack',   hourStart:10,   hourEnd:11.5 },
+  { key:'lunch',           label:'Lunch',           hourStart:11.5, hourEnd:14   },
+  { key:'afternoon_snack', label:'Afternoon Snack', hourStart:14,   hourEnd:17   },
+  { key:'dinner',          label:'Dinner',          hourStart:17,   hourEnd:20   },
+  { key:'evening_bite',    label:'Evening Bite',    hourStart:20,   hourEnd:29   }
+];
+function defaultMomentForNow(){
+  const h = new Date().getHours() + new Date().getMinutes()/60;
+  const hh = h < 5 ? h + 24 : h; // treat post-midnight hours as a continuation of the evening bite
+  const found = MOMENTS.find(m => hh >= m.hourStart && hh < m.hourEnd);
+  return found ? found.key : MOMENTS[0].key;
+}
+
+/* Each weekday has its own flavor of moment names. Labels are looked up fresh
+   for whatever date is being viewed/edited (via momentLabelFor), so backdated
+   days always show the theme for the weekday they actually fell on. */
+const WEEKDAY_THEMES = {
+  0: { name:'Lazy Day',        labels:{ breakfast:'Lazy Morning',            morning_snack:'Blanket Snack', lunch:'Brunch',         afternoon_snack:'Lounge Break', dinner:'Sunday Roast',   evening_bite:'Sleepy Bite' } },
+  1: { name:'Adventurer',      labels:{ breakfast:"Adventurer's Breakfast",  morning_snack:'Trail Mix Break', lunch:'Basecamp Lunch', afternoon_snack:"Ranger's Rest", dinner:'Campfire Dinner', evening_bite:'Watch Duty Snack' } },
+  2: { name:'Forge',           labels:{ breakfast:'Forge Breakfast',         morning_snack:'Anvil Snack',    lunch:'Smithy Lunch',   afternoon_snack:'Ember Break',   dinner:'Forge Dinner',    evening_bite:'Last Embers Bite' } },
+  3: { name:"Wizard's Study",  labels:{ breakfast:"Scholar's Breakfast",     morning_snack:'Study Break',    lunch:'Equinox Lunch',  afternoon_snack:'Scroll Break',  dinner:'Study Dinner',    evening_bite:'Candlelight Snack' } },
+  4: { name:'The Shire',       labels:{ breakfast:'Breakfast',               morning_snack:'Elevenses',      lunch:'Luncheon',       afternoon_snack:'Afternoon Tea', dinner:'Dinner',          evening_bite:'Supper' } },
+  5: { name:'Family Day',      labels:{ breakfast:'Rise & Shine Breakfast',  morning_snack:'Snack Patrol',   lunch:'Playground Lunch', afternoon_snack:'Juice Box Break', dinner:'Family Dinner', evening_bite:'Bedtime Story Snack' } },
+  6: { name:'Festival Day',    labels:{ breakfast:'Festival Breakfast',      morning_snack:'Fairground Snack', lunch:'Feast Lunch',  afternoon_snack:'Carnival Break', dinner:'Bonfire Dinner', evening_bite:'Starlit Snack' } }
+  // keys are JS Date.getDay() values: 0=Sunday, 1=Monday, ... 6=Saturday
+};
+
+/* EXTENSION POINT: date-ranged overrides for holidays or themed weeks/months —
+   checked before the weekday theme, so e.g. a "Winter Feast" week could rename
+   every moment for a few specific dates regardless of which weekday they fall on.
+   Example shape (currently empty, so nothing changes until entries are added):
+   { start:'2026-12-24', end:'2026-12-26', labels:{ dinner:'Feast Dinner', ... } } */
+const SPECIAL_PERIODS = [];
+
+function momentLabelFor(momentKey, dateStr){
+  const special = SPECIAL_PERIODS.find(p => dateStr >= p.start && dateStr <= p.end);
+  if(special && special.labels[momentKey]) return special.labels[momentKey];
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const weekday = new Date(y, m-1, d).getDay();
+  const theme = WEEKDAY_THEMES[weekday];
+  if(theme && theme.labels[momentKey]) return theme.labels[momentKey];
+  const base = MOMENTS.find(mm => mm.key === momentKey);
+  return base ? base.label : momentKey;
+}
+
+/* Streak is always derived fresh from `entries` + `freezeLog` — never stored
+   as an independent counter — so retroactive backdating "just works". */
+function computeStreak(entries, freezeLog){
+  const dateSet = new Set(entries.map(e => e.date));
+  const workingFreeze = { ...freezeLog };
+  const today = todayStr();
+  let cursor = dateSet.has(today) ? today : addDaysStr(today, -1);
+  let daysBack = (cursor === today) ? 0 : 1;
+  let length = 0;
+  const frozenDates = [];
+
+  while(true){
+    if(dateSet.has(cursor)){
+      length++;
+    } else if(daysBack > BACKDATE_DAYS){
+      // Beyond the backdating window — the only way this day can still be
+      // forgiven is the weekly streak freeze.
+      const wk = isoMondayOf(cursor);
+      if(!workingFreeze[wk]){
+        workingFreeze[wk] = true;
+        frozenDates.push(cursor);
+        // day is forgiven but not counted itself — it just doesn't break the chain
+      } else {
+        break;
+      }
+    } else {
+      break; // still within the backdating window — a real gap, not yet resolved
+    }
+    cursor = addDaysStr(cursor, -1);
+    daysBack++;
+  }
+  return { length, workingFreeze, frozenDates };
+}
+
+function updateStreakAndMilestones(){
+  const prevLength = state.streakMeta.currentLength;
+  const { length, workingFreeze, frozenDates } = computeStreak(state.entries, state.freezeLog);
+  state.freezeLog = workingFreeze;
+  state.streakMeta.currentLength = length;
+  if(length < prevLength){
+    state.streakMeta.milestonesAwarded = state.streakMeta.milestonesAwarded.filter(m => m <= length);
+  }
+  let bonusXP = 0, highestMilestone = null;
+  for(const m of MILESTONES){
+    if(length >= m.days && !state.streakMeta.milestonesAwarded.includes(m.days)){
+      state.streakMeta.milestonesAwarded.push(m.days);
+      bonusXP += m.xp;
+      highestMilestone = m.days;
+    }
+  }
+  return { prevLength, newLength:length, bonusXP, highestMilestone, freezeJustUsed: frozenDates.length > 0 };
+}
+
+/* ============================================================
+   ENTRIES — add / edit / delete
+   ============================================================ */
+function numOrNull(v){ return (v === '' || v == null) ? null : Number(v); }
+
+/* All XP gains/losses run through here. `xpFloor` tracks the minimum XP of the
+   highest stage ever reached, and only ever ratchets upward — so even if
+   totalXP is later clawed back below that (e.g. deleting the last item in a
+   moment), the dragon's *displayed stage* never regresses. The raw XP number
+   itself is allowed to drop and is shown as-is. */
+function applyXPDelta(delta){
+  state.totalXP = Math.max(0, state.totalXP + delta);
+  const realStage = getStage(state.totalXP);
+  if(realStage.min > state.xpFloor) state.xpFloor = realStage.min;
+}
+function effectiveXP(){ return Math.max(state.totalXP, state.xpFloor); }
+
+/* A moment earns MOMENT_XP exactly once per date+moment — for as long as it
+   has at least one entry in it. Call this any time entries for a given
+   date+moment might have gone from zero to one-or-more (grants) or from
+   one-or-more back to zero (claws back). Returns the XP delta applied, so
+   callers can fold it into an "+X XP" popup where relevant. */
+function reconcileMomentAward(date, moment){
+  const key = date + '|' + moment;
+  const hasEntries = state.entries.some(e => e.date === date && e.moment === moment);
+  const alreadyAwarded = key in state.momentAwards;
+  if(hasEntries && !alreadyAwarded){
+    state.momentAwards[key] = MOMENT_XP;
+    return MOMENT_XP;
+  }
+  if(!hasEntries && alreadyAwarded){
+    const amt = state.momentAwards[key];
+    delete state.momentAwards[key];
+    return -amt;
+  }
+  return 0;
+}
+
+function addEntry({ name, calories, protein, carbs, fat, date, moment }){
+  const today = todayStr();
+  const normalized = name.trim().toLowerCase();
+  const isNewFood = !state.allFoodNames.includes(normalized);
+
+  const entry = {
+    id: 'e' + Date.now().toString(36) + Math.random().toString(36).slice(2,7),
+    name: name.trim(),
+    calories: Number(calories) || 0,
+    protein: numOrNull(protein),
+    carbs: numOrNull(carbs),
+    fat: numOrNull(fat),
+    date,
+    moment,
+    backdated: date !== today,
+    loggedAt: Date.now()
+  };
+  state.entries.push(entry);
+  if(isNewFood) state.allFoodNames.push(normalized);
+
+  let xpGained = 0;
+  xpGained += reconcileMomentAward(date, moment); // MOMENT_XP if this is the first entry in this date+moment, else 0
+  if(isNewFood) xpGained += NEW_FOOD_BONUS;
+
+  const stageBefore = getStage(effectiveXP()).key;
+  const { newLength, bonusXP, highestMilestone, freezeJustUsed } = updateStreakAndMilestones();
+  xpGained += bonusXP;
+  applyXPDelta(xpGained);
+  const stageAfter = getStage(effectiveXP()).key;
+
+  saveState();
+  render();
+  playFeedback({ xpGained, newLength, highestMilestone, freezeJustUsed, stageBefore, stageAfter });
+}
+
+function editEntry(id, fields){
+  const e = state.entries.find(x => x.id === id);
+  if(!e) return;
+  const oldDate = e.date, oldMoment = e.moment;
+  if(fields.name != null && fields.name.trim() !== '') e.name = fields.name.trim();
+  if(fields.calories != null && fields.calories !== '') e.calories = Number(fields.calories) || 0;
+  e.protein = numOrNull(fields.protein);
+  e.carbs = numOrNull(fields.carbs);
+  e.fat = numOrNull(fields.fat);
+  if(fields.moment) e.moment = fields.moment;
+  if(fields.date && fields.date !== e.date){
+    e.date = fields.date;
+    e.backdated = fields.date !== todayStr();
+  }
+  // Moving an entry to a different date/moment can empty out the old slot
+  // (clawing back its award) and/or populate a new one (granting it) — same
+  // rule a delete-then-re-add would follow.
+  if(e.date !== oldDate || e.moment !== oldMoment){
+    let delta = reconcileMomentAward(oldDate, oldMoment);
+    delta += reconcileMomentAward(e.date, e.moment);
+    applyXPDelta(delta);
+  }
+  updateStreakAndMilestones(); // only recomputes streak coverage; milestone XP already awarded is never revisited here
+  saveState();
+  ui.editingId = null;
+  render();
+}
+
+let lastDeleted = null;
+function deleteEntry(id){
+  const idx = state.entries.findIndex(x => x.id === id);
+  if(idx === -1) return;
+  lastDeleted = { entry: state.entries[idx], index: idx };
+  const { date, moment } = state.entries[idx];
+  state.entries.splice(idx, 1);
+  const delta = reconcileMomentAward(date, moment); // negative if this was the last entry in that moment
+  applyXPDelta(delta);
+  updateStreakAndMilestones();
+  saveState();
+  ui.editingId = null;
+  render();
+  showInlineFeedback(delta < 0 ? `Removed — tap to undo (−${-delta} XP)` : 'Removed — tap to undo', undoDelete);
+}
+function undoDelete(){
+  if(!lastDeleted) return;
+  state.entries.splice(Math.min(lastDeleted.index, state.entries.length), 0, lastDeleted.entry);
+  const key = lastDeleted.entry.name.trim().toLowerCase();
+  if(!state.allFoodNames.includes(key)) state.allFoodNames.push(key);
+  const { date, moment } = lastDeleted.entry;
+  const delta = reconcileMomentAward(date, moment); // re-grants if this moment had been clawed back
+  applyXPDelta(delta);
+  lastDeleted = null;
+  updateStreakAndMilestones();
+  saveState();
+  render();
+  showInlineFeedback('Restored');
+}
+
+/* ============================================================
+   QUICK-ADD FOODS (recent + frequent, blended)
+   EXTENSION POINT: swap this for a real food-database search later —
+   the chip UI just needs {name, calories, protein, carbs, fat}.
+   ============================================================ */
+function buildQuickFoods(moment){
+  const map = new Map();
+  for(const e of state.entries){
+    if(moment && e.moment !== moment) continue;
+    const key = e.name.trim().toLowerCase();
+    const cur = map.get(key);
+    if(cur){
+      cur.count++;
+      if(e.loggedAt > cur.lastLoggedAt){
+        Object.assign(cur, { name:e.name, calories:e.calories, protein:e.protein, carbs:e.carbs, fat:e.fat, lastLoggedAt:e.loggedAt });
+      }
+    } else {
+      map.set(key, { name:e.name, calories:e.calories, protein:e.protein, carbs:e.carbs, fat:e.fat, count:1, lastLoggedAt:e.loggedAt });
+    }
+  }
+  return Array.from(map.values())
+    .sort((a,b) => (b.count - a.count) || (b.lastLoggedAt - a.lastLoggedAt))
+    .slice(0, 8);
+}
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+function qs(sel){ return document.querySelector(sel); }
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+function flameLevelClass(streak){
+  if(streak >= 30) return 'flame-4';
+  if(streak >= 7) return 'flame-3';
+  if(streak >= 3) return 'flame-2';
+  return 'flame-1';
+}
+
+function renderDragon(){
+  // The dragon's stage/art is based on the floor-protected value so it never
+  // visually de-evolves; the number shown to the player is the real, honest
+  // total, which can drop (e.g. after deleting the last item in a moment).
+  const stage = getStage(effectiveXP());
+  qs('#dragonStageWrap').className = 'dragon-stage-wrap stage-' + stage.key;
+  qs('#dragonName').textContent = `Ember · ${stage.label}`;
+
+  let pct, label;
+  if(stage.nextLabel){
+    const span = stage.max - stage.min + 1;
+    pct = Math.max(0, Math.min(100, Math.round(((state.totalXP - stage.min) / span) * 100)));
+    label = `${state.totalXP.toLocaleString()} / ${(stage.max+1).toLocaleString()} ${stage.nextLabel}`;
+  } else {
+    pct = 100;
+    label = `${state.totalXP.toLocaleString()} XP · fully grown`;
+    // EXTENSION POINT: cosmetic unlocks for the maxed-out adult stage could hook in here.
+  }
+  qs('#xpFill').style.width = pct + '%';
+  qs('#xpLabel').textContent = label;
+
+  const streak = state.streakMeta.currentLength;
+  qs('#streakText').textContent = streak > 0 ? `Day ${streak} streak` : 'Log a meal to start your streak';
+  qs('#flameIcon').className = 'flame ' + flameLevelClass(streak);
+
+  const freezeUsed = !!state.freezeLog[isoMondayOf(todayStr())];
+  const freezeEl = qs('#freezeStatus');
+  freezeEl.textContent = freezeUsed ? '❄️ Freeze used this week' : '❄️ Freeze ready';
+  freezeEl.className = 'freeze-status ' + (freezeUsed ? 'used' : 'ready');
+}
+
+function renderDatePills(){
+  const wrap = qs('#datePills');
+  wrap.innerHTML = '';
+  const today = todayStr();
+  for(let i = 0; i >= -BACKDATE_DAYS; i--){
+    const dateStr = addDaysStr(today, i);
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'date-pill' + (dateStr === ui.selectedDate ? ' selected' : '') + (i !== 0 ? ' past' : '');
+    btn.textContent = pillLabel(dateStr, i);
+    btn.addEventListener('click', () => { ui.selectedDate = dateStr; render(); });
+    wrap.appendChild(btn);
+  }
+}
+
+function renderMomentPills(){
+  const wrap = qs('#momentPills');
+  wrap.innerHTML = '';
+  for(const m of MOMENTS){
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'date-pill' + (m.key === ui.selectedMoment ? ' selected' : '');
+    btn.textContent = momentLabelFor(m.key, ui.selectedDate);
+    btn.addEventListener('click', () => { ui.selectedMoment = m.key; render(); });
+    wrap.appendChild(btn);
+  }
+}
+
+function renderChips(){
+  const wrap = qs('#chipRow');
+  wrap.innerHTML = '';
+  const foods = buildQuickFoods(ui.selectedMoment);
+  if(foods.length === 0){
+    wrap.innerHTML = '<div class="chip-empty">Log a few meals here and they\'ll show up for one-tap logging.</div>';
+    return;
+  }
+  for(const f of foods){
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'chip';
+    chip.innerHTML = `<span class="chip-name">${escapeHtml(f.name)}</span><span class="chip-cal">${f.calories} cal</span>`;
+    chip.addEventListener('click', () => addEntry({ name:f.name, calories:f.calories, protein:f.protein, carbs:f.carbs, fat:f.fat, date:ui.selectedDate, moment:ui.selectedMoment }));
+    wrap.appendChild(chip);
+  }
+}
+
+function macroSummary(e){
+  if(e.protein == null && e.carbs == null && e.fat == null) return '';
+  const parts = [];
+  if(e.protein != null) parts.push(`P${e.protein}`);
+  if(e.carbs != null) parts.push(`C${e.carbs}`);
+  if(e.fat != null) parts.push(`F${e.fat}`);
+  return `<div class="entry-macros">${parts.join(' · ')}</div>`;
+}
+
+function buildEditRow(e){
+  const wrap = document.createElement('div');
+  wrap.className = 'edit-row';
+  wrap.innerHTML = `
+    <input type="text" class="edit-name" value="${escapeHtml(e.name)}" aria-label="Food name">
+    <div class="edit-grid">
+      <input type="number" inputmode="numeric" class="edit-cal" value="${e.calories}" placeholder="Calories" aria-label="Calories">
+      <input type="number" inputmode="numeric" class="edit-protein" value="${e.protein ?? ''}" placeholder="Protein g" aria-label="Protein">
+      <input type="number" inputmode="numeric" class="edit-carbs" value="${e.carbs ?? ''}" placeholder="Carbs g" aria-label="Carbs">
+      <input type="number" inputmode="numeric" class="edit-fat" value="${e.fat ?? ''}" placeholder="Fat g" aria-label="Fat">
+    </div>
+    <div class="edit-selects">
+      <select class="edit-moment" aria-label="Moment"></select>
+      <select class="edit-date" aria-label="Date"></select>
+    </div>
+    <div class="edit-actions">
+      <button type="button" class="save-btn">Save</button>
+      <button type="button" class="delete-btn">Delete</button>
+      <button type="button" class="cancel-btn">Cancel</button>
+    </div>
+  `;
+  const momentSelect = wrap.querySelector('.edit-moment');
+  for(const m of MOMENTS){
+    const opt = document.createElement('option');
+    opt.value = m.key;
+    opt.textContent = momentLabelFor(m.key, e.date);
+    if(m.key === e.moment) opt.selected = true;
+    momentSelect.appendChild(opt);
+  }
+  const dateSelect = wrap.querySelector('.edit-date');
+  const today = todayStr();
+  for(let i = 0; i >= -BACKDATE_DAYS; i--){
+    const d = addDaysStr(today, i);
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = headerLabel(d);
+    if(d === e.date) opt.selected = true;
+    dateSelect.appendChild(opt);
+  }
+  wrap.querySelector('.save-btn').addEventListener('click', () => editEntry(e.id, {
+    name: wrap.querySelector('.edit-name').value,
+    calories: wrap.querySelector('.edit-cal').value,
+    protein: wrap.querySelector('.edit-protein').value,
+    carbs: wrap.querySelector('.edit-carbs').value,
+    fat: wrap.querySelector('.edit-fat').value,
+    moment: momentSelect.value,
+    date: dateSelect.value
+  }));
+  wrap.querySelector('.delete-btn').addEventListener('click', () => deleteEntry(e.id));
+  wrap.querySelector('.cancel-btn').addEventListener('click', () => { ui.editingId = null; render(); });
+  return wrap;
+}
+
+function renderEntryList(){
+  const wrap = qs('#entryList');
+  const emptyState = qs('#emptyState');
+  qs('#logDateLabel').textContent = headerLabel(ui.selectedDate);
+
+  const dayEntries = state.entries.filter(e => e.date === ui.selectedDate);
+  const total = dayEntries.reduce((sum,e) => sum + e.calories, 0);
+  qs('#todayTotal').textContent = `${total.toLocaleString()} cal`;
+  // EXTENSION POINT: a calorie target/budget comparison would render next to this
+  // total, and per-moment limits would render next to each .moment-sub below.
+
+  wrap.innerHTML = '';
+  if(dayEntries.length === 0){
+    emptyState.hidden = false;
+    emptyState.textContent = ui.selectedDate === todayStr()
+      ? 'No food logged yet today — add your first meal above.'
+      : 'No food logged for this day yet.';
+    return;
+  }
+  emptyState.hidden = true;
+
+  const knownKeys = new Set(MOMENTS.map(m => m.key));
+  const groups = [...MOMENTS];
+  if(dayEntries.some(e => !knownKeys.has(e.moment))){
+    groups.push({ key:'__other__', label:'Other' }); // entries logged before moments existed
+  }
+
+  for(const g of groups){
+    const items = dayEntries
+      .filter(e => g.key === '__other__' ? !knownKeys.has(e.moment) : e.moment === g.key)
+      .sort((a,b) => a.loggedAt - b.loggedAt);
+
+    const groupEl = document.createElement('div');
+    groupEl.className = 'moment-group';
+    const label = g.key === '__other__' ? g.label : momentLabelFor(g.key, ui.selectedDate);
+    const subtotal = items.reduce((s,e) => s + e.calories, 0);
+    groupEl.innerHTML = `<div class="moment-header"><span>${escapeHtml(label)}</span><span class="moment-sub">${items.length ? subtotal.toLocaleString() + ' cal' : ''}</span></div>`;
+
+    if(items.length === 0){
+      const emptyLine = document.createElement('div');
+      emptyLine.className = 'moment-empty';
+      emptyLine.textContent = 'Nothing logged here yet.';
+      groupEl.appendChild(emptyLine);
+    } else {
+      for(const e of items) groupEl.appendChild(buildEntryRow(e));
+    }
+    wrap.appendChild(groupEl);
+  }
+}
+
+function buildEntryRow(e){
+  const row = document.createElement('div');
+  row.className = 'entry-row';
+  if(ui.editingId === e.id){
+    row.appendChild(buildEditRow(e));
+    return row;
+  }
+  row.innerHTML = `
+    <div class="entry-line">
+      <button type="button" class="entry-main">
+        <span class="entry-name">${e.backdated ? '<span class="backdated-tag" title="Logged after the fact">🕓</span>' : ''}${escapeHtml(e.name)}</span>
+        <span class="entry-cal">${e.calories} cal</span>
+      </button>
+      <button type="button" class="entry-delete" aria-label="Delete ${escapeHtml(e.name)}">✕</button>
+    </div>
+    ${macroSummary(e)}
+  `;
+  row.querySelector('.entry-main').addEventListener('click', () => { ui.editingId = e.id; render(); });
+  row.querySelector('.entry-delete').addEventListener('click', () => deleteEntry(e.id));
+  return row;
+}
+
+function render(){
+  renderDragon();
+  renderDatePills();
+  renderMomentPills();
+  renderChips();
+  renderEntryList();
+}
+
+/* ============================================================
+   INSTANT FEEDBACK — xp pop, milestone / evolution banners
+   ============================================================ */
+function showXpPop(amount){
+  const pop = document.createElement('div');
+  pop.className = 'xp-pop-item';
+  pop.textContent = `+${amount} XP`;
+  qs('#xpPopWrap').appendChild(pop);
+  setTimeout(() => pop.remove(), 1500);
+}
+function showBanner(text){
+  const banner = document.createElement('div');
+  banner.className = 'banner';
+  banner.textContent = text;
+  qs('#bannerWrap').appendChild(banner);
+  requestAnimationFrame(() => banner.classList.add('show'));
+  setTimeout(() => {
+    banner.classList.remove('show');
+    setTimeout(() => banner.remove(), 400);
+  }, 2600);
+}
+function showInlineFeedback(text, onTap){
+  const el = qs('#addFeedback');
+  el.textContent = text;
+  el.classList.add('show');
+  el.style.textDecoration = onTap ? 'underline' : 'none';
+  el.onclick = onTap ? () => { onTap(); el.onclick = null; } : null;
+  clearTimeout(showInlineFeedback._timer);
+  showInlineFeedback._timer = setTimeout(() => { el.classList.remove('show'); el.onclick = null; }, onTap ? 4000 : 1800);
+}
+function playFeedback({ xpGained, highestMilestone, freezeJustUsed, stageBefore, stageAfter }){
+  if(xpGained > 0){
+    showXpPop(xpGained);
+    // The dragon card can scroll out of view once the keyboard opens on mobile,
+    // so this inline line (right under the Add button) is the guaranteed-visible
+    // confirmation — it's what actually answers "did that work?".
+    showInlineFeedback(`✓ Added — +${xpGained} XP`);
+  } else {
+    showInlineFeedback('✓ Added');
+  }
+  if(stageBefore !== stageAfter){
+    showBanner(stageAfter === 'baby' ? '🥚💥 Ember hatched into a Baby Dragon!' : '✨ Ember grew into an Adult Dragon!');
+  } else if(highestMilestone){
+    const m = MILESTONES.find(mm => mm.days === highestMilestone);
+    showBanner(`🔥 ${highestMilestone}-day streak! +${m.xp} XP`);
+  } else if(freezeJustUsed){
+    showBanner('❄️ Used your weekly freeze to protect your streak');
+  }
+}
+
+/* ============================================================
+   FORM WIRING + INIT
+   ============================================================ */
+function setupForm(){
+  const macrosToggle = qs('#toggleMacros');
+  const macrosRow = qs('#macrosRow');
+  macrosToggle.addEventListener('click', () => {
+    ui.macrosOpen = !ui.macrosOpen;
+    macrosRow.hidden = !ui.macrosOpen;
+    macrosToggle.textContent = ui.macrosOpen ? '- macros' : '+ macros';
+  });
+
+  qs('#logForm').addEventListener('submit', (evt) => {
+    evt.preventDefault();
+    try{
+      const nameInput = qs('#foodName');
+      const calInput = qs('#foodCals');
+      const name = nameInput.value.trim();
+      if(!name || calInput.value === '') return;
+      addEntry({
+        name, calories: calInput.value,
+        protein: qs('#foodProtein').value,
+        carbs: qs('#foodCarbs').value,
+        fat: qs('#foodFat').value,
+        date: ui.selectedDate,
+        moment: ui.selectedMoment
+      });
+      nameInput.value = '';
+      calInput.value = '';
+      qs('#foodProtein').value = '';
+      qs('#foodCarbs').value = '';
+      qs('#foodFat').value = '';
+      nameInput.focus();
+    }catch(err){
+      showFatalError('Add failed: ' + err.message);
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  try{
+    ui.selectedDate = todayStr();
+    ui.selectedMoment = defaultMomentForNow();
+    setupForm();
+    updateStreakAndMilestones(); // sync streak/freeze silently in case a day rolled over while closed
+    saveState();
+    render();
+  }catch(err){
+    showFatalError('Startup error: ' + err.message);
+  }
+});
+
+window.addEventListener('error', (e) => {
+  // Browsers strip all detail from errors that originate outside the page's
+  // own script (most commonly a browser extension or content blocker running
+  // on the page) — the message comes through as the literal string
+  // "Script error." with no filename or line number attached. There's nothing
+  // actionable Wyrm can do with that, and showing a scary banner for it just
+  // alarms people over something that isn't a bug in this app. Log it quietly
+  // instead and only surface the banner for errors we can actually say something about.
+  const opaque = e.message === 'Script error.' && !e.filename && !e.lineno;
+  if(opaque){
+    console.warn('Wyrm: suppressed an opaque script error (likely from a browser extension), not from Wyrm itself.', e);
+    return;
+  }
+  showFatalError('Script error: ' + e.message);
+});
+
+function showFatalError(text){
+  let el = document.getElementById('fatalError');
+  if(!el){
+    el = document.createElement('div');
+    el.id = 'fatalError';
+    el.style.cssText = 'position:fixed;left:10px;right:10px;bottom:10px;z-index:9999;background:#C0435A;color:#fff;padding:12px 40px 12px 14px;border-radius:12px;font-family:sans-serif;font-size:13px;box-shadow:0 6px 16px rgba(0,0,0,.4);';
+    const textEl = document.createElement('span');
+    textEl.id = 'fatalErrorText';
+    const closeBtn = document.createElement('button');
+    closeBtn.type = 'button';
+    closeBtn.textContent = '✕';
+    closeBtn.setAttribute('aria-label', 'Dismiss error');
+    closeBtn.style.cssText = 'position:absolute;top:4px;right:6px;background:none;border:none;color:#fff;font-size:16px;padding:8px;line-height:1;cursor:pointer;';
+    closeBtn.addEventListener('click', () => el.remove());
+    el.appendChild(textEl);
+    el.appendChild(closeBtn);
+    document.body.appendChild(el);
+  }
+  el.querySelector('#fatalErrorText').textContent = '⚠️ ' + text + ' — please screenshot this and share it.';
+}
+</script>
+</body>
+</html>
